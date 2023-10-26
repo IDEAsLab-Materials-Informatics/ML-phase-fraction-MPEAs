@@ -1,0 +1,13 @@
+project_name			[M7.ANN5_FS2
+database 				[db_HEAs.csv
+y 						[phase_code
+x 						[R_delta,S_config,VEC,R_cov_delta,density_avg,E_delta,G_delta,B_delta,EN_Allen_avg,Vm_delta,E_coh_avg,E_coh_delta,H_ch_M_L_R,H_el_M_S_R
+layer_units				[40,35,30,25,20,15,10,3
+activation_functions	[relu,relu,relu,relu,relu,relu,relu,softmax
+loss_function			[BinaryCrossentropy
+optimizer				[RMSprop
+learning_rate			[0.0005
+iterations				[5000
+save_after_iterations	[100
+check_acc				[0.5
+check_after_iterations	[300
